@@ -53,6 +53,12 @@ const LevelGenerator = (words) => {
     } else if (currentLevel == 3) {
       stringWordLength = 15;
       seconds = 35;
+    } else if (currentLevel == 4) {
+      stringWordLength = 20;
+      seconds = 45; 
+    } else if (currentLevel == 5) {
+      stringWordLength = 25;
+      seconds = 60;
     } else{
       endGame()
     }
@@ -100,7 +106,7 @@ $(".retry-btn").click(function(){
   LevelGenerator(words);
 });
 $(".next-level-btn").click(function(){
-  if (currentLevel == 2){
+  if (currentLevel == 4){
     $(".next-level-btn").text("END GAME");
   }
   $(".next-level-btn").addClass("d-none");

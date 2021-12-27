@@ -77,7 +77,7 @@ const GameEngine = (string) => {
   $(".string").text(string).fadeIn(2000);
   countdown(seconds);
   $(".countdown").removeClass("d-none");
-  setTimeout(function(){userInput.removeClass("d-none")}, 1000);
+  setTimeout(function(){userInput.removeClass("d-none"); userInput.focus();}, 1000);
   let startTime = Date.now() + 1000 //time of start (plus the additional second it takes for input to load)
   let correct = false;
   userInput.bind("input", function() {

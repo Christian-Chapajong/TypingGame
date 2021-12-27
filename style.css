@@ -33,9 +33,7 @@ body {
 .user-input{
   width: 100%;
 }
-.user-input:focus{
-  outline: none !important;
-}
+
 .red{
   color: #ff4242;
 }
